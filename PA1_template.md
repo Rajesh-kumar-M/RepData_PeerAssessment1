@@ -16,7 +16,8 @@ total.steps <- tapply(data$steps, data$date, FUN = sum, na.rm = TRUE)
 qplot(total.steps, binwidth = 1000, xlab = "total number of steps taken each day")
 ```
 
-![image-1](image-1.png) 
+![image 1](https://user-images.githubusercontent.com/65997226/88397303-5e33a500-cde1-11ea-82ec-fa104c704b3f.PNG)
+
 
 ```r
 mean(total.steps, na.rm = TRUE)
@@ -45,7 +46,8 @@ ggplot(data = averages, aes(x = interval, y = steps)) + geom_line() + xlab("5-mi
     ylab("average number of steps taken")
 ```
 
-![image-2](image-2.png) 
+![image 2](https://user-images.githubusercontent.com/65997226/88397394-786d8300-cde1-11ea-83f9-8d7327271be8.PNG)
+
 
 
 On average across all the days in the dataset, the 5-minute interval contains
@@ -103,7 +105,9 @@ total.steps <- tapply(filled.data$steps, filled.data$date, FUN = sum)
 qplot(total.steps, binwidth = 1000, xlab = "total number of steps taken each day")
 ```
 
-![image-4](image-4.png) 
+![image 3](https://user-images.githubusercontent.com/65997226/88397650-e1ed9180-cde1-11ea-9d02-ed65ed68dff0.PNG)
+
+
 
 ```r
 mean(total.steps)
@@ -155,4 +159,5 @@ ggplot(averages, aes(interval, steps)) + geom_line() + facet_grid(day ~ .) +
     xlab("5-minute interval") + ylab("Number of steps")
 ```
 
-![image-6](image-6.png) 
+![image 4](https://user-images.githubusercontent.com/65997226/88397721-fd589c80-cde1-11ea-95d1-2545d4100813.PNG)
+
